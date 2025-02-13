@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Styling for Navigation Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Center the Table */
+.story-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.story-table th, .story-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.story-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Image Styling */
+.story-image {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+.number-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.block {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.block:hover {
+    transform: scale(1.1);
+}
+
+#block1 { background-color: red; }
+#block2 { background-color: blue; }
+#block3 { background-color: green; }
+#block4 { background-color: orange; }
+
+.destination-list {
+    display: none;
+    margin-top: 20px;
+}
+
+.destination-list h2 {
+    color: #333;
+}
+
+.destination-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.destination-list li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.destination-list ul ul {
+    margin-left: 20px;
+    font-size: 16px;
+    color: gray;
+}

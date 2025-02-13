@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the Travel Blog</h1>
+        <p>Click on a destination to explore!</p>
+
+        <!-- Button to navigate to Travel Stories -->
+        <a href="travel-stories.html" class="btn">Go to Travel Stories</a>
+
+
+    <div class="number-blocks">
+        <div class="block" id="block1">1</div>
+        <div class="block" id="block2">2</div>
+        <div class="block" id="block3">3</div>
+        <div class="block" id="block4">4</div>
+    </div>
+
+  
+
+        <!-- Ordered List for Destinations -->
+        <h2>Popular Destinations</h2>
+        <ol>
+            <li><strong>Europe</strong>
+                <ul>
+                    <li>France: Paris, Nice, Marseille</li>
+                    <li>Italy: Rome, Florence, Venice</li>
+                    <li>Greece: Athens, Thessaloniki, Santorini</li>
+                </ul>
+            </li>
+            <li><strong>Asia</strong>
+                <ul>
+                    <li>Japan: Tokyo, Kyoto, Osaka</li>
+                    <li>China: Beijing, Shanghai, Xi'an</li>
+                    <li>India: New Delhi, Mumbai, Jaipur</li>
+                </ul>
+            </li>
+            <li><strong>America</strong>
+                <ul>
+                    <li>USA: New York City, Los Angeles, Chicago</li>
+                    <li>Brazil: Rio de Janeiro, Sao Paulo, Salvador</li>
+                    <li>Canada: Toronto, Vancouver, Montreal</li>
+                </ul>
+            </li>
+            <li><strong>Africa</strong>
+                <ul>
+                    <li>South Africa: Cape Town, Johannesburg, Durban</li>
+                    <li>Egypt: Cairo, Luxor, Sharm El Sheikh</li>
+                    <li>Morocco: Marrakech, Casablanca, Fez</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let blocks = document.querySelectorAll(".block");
+            let destinations = document.querySelectorAll(".destination-list");
+
+            blocks.forEach((block, index) => {
+                block.addEventListener("click", function () {
+                    destinations.forEach(dest => dest.style.display = "none");
+                    document.getElementById(`destination${index + 1}`).style.display = "block";
+                });
+            });
+        });
+    </script>
+
+</html>
